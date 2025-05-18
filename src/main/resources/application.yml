@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: vetflux-assignment
+  datasource:
+    url: jdbc:mysql://localhost:3306/vetflux-assignment?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: true
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
