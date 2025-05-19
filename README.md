@@ -9,7 +9,7 @@ Java 기반 서버-클라이언트 채팅 어플리케이션 구현
 - Gradle 8.13
 - Spring Security + JWT
 - Spring WebSocket + STOMP + SockJS
-- JPA / MySQL 8.0.40
+- JPA / MySQL 8.0.40(localhost:3306 root/root)
 - Redis (localhost:6379)
 - Frontend: HTML + Axios.js + STOMP.js
 
