@@ -22,13 +22,10 @@ public class ChatMessageReceiver implements MessageListener {
         try {
             String json = new String(message.getBody());
             ChatMessage chatMessage = objectMapper.readValue(json, ChatMessage.class);
-
-            // WebSocket으로 브로드캐스트
             messagingTemplate.convertAndSend(
                 "/sub/chat/room/" + chatMessage.getChatRoomId(),
                 chatMessage
             );
-
         } catch (Exception e) {
             e.printStackTrace();
         }

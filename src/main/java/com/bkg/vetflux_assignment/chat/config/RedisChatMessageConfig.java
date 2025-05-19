@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 
 @Configuration
 @RequiredArgsConstructor
-public class RedisMessageConfig {
+public class RedisChatMessageConfig {
 
     private final ChatMessageReceiver chatMessageReceiver;
 
